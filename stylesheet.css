@@ -119,7 +119,7 @@ h3 {
 .portrait {
   display: block;
   width: 175px;
-  height: 205px;
+  height: 175px;
   object-fit: cover;
   border-radius: 10px;
 }
