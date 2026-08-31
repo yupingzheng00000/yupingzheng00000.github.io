@@ -7,233 +7,245 @@
   <meta name="author" content="Yuping Zheng">
   <title>Yuping Zheng | Academic Homepage</title>
 
-  <link rel="stylesheet" href="stylesheet.css">
+  <!-- Version query forces browsers/GitHub Pages to fetch the new CSS. -->
+  <link rel="stylesheet" href="stylesheet.css?v=20260831-2">
   <link rel="icon" type="image/svg+xml" href="images/template/avatar.svg">
 </head>
 
 <body>
-  <main class="page-shell">
+  <div class="site">
 
-    <!-- About -->
-    <section id="about" class="page-section about-section">
-      <div class="about-copy">
-        <h1>Yuping Zheng</h1>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#research">Research</a>
+      <a href="#education">Education</a>
+      <a href="#" class="cv-nav" title="Add your CV PDF">CV</a>
+    </nav>
 
-        <p>
-          I am a Ph.D. student in Computer Science at the
-          <a href="https://www.virginia.edu/" target="_blank" rel="noopener">University of Virginia</a>,
-          advised by Prof. Xi Peng.
-        </p>
+    <main>
+      <!-- About -->
+      <section id="about" class="about-section">
+        <div class="about-copy">
+          <h1>Yuping Zheng</h1>
+          <p class="role">Ph.D. Student in Computer Science · University of Virginia</p>
 
-        <p>
-          My research interests broadly lie in representation learning, generative modeling,
-          and interpretability. Recently, I have been particularly interested in understanding
-          how models learn and organize internal representations, especially in world models
-          and multimodal systems.
-        </p>
-
-        <div class="contact-links" aria-label="Contact and profile links">
-          <!-- TODO: replace # with your actual email/CV/Scholar links -->
-          <a href="#" title="Add your email address">Email</a>
-          <span>·</span>
-          <a href="#" title="Add your CV PDF">CV</a>
-          <span>·</span>
-          <a href="#" title="Add your Google Scholar profile">Google Scholar</a>
-          <span>·</span>
-          <a href="https://github.com/yupingzheng00000" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-
-      <div class="about-photo">
-        <!-- Temporary placeholder; replace with your portrait later -->
-        <img src="images/template/avatar.svg" alt="Portrait placeholder for Yuping Zheng">
-      </div>
-    </section>
-
-    <!-- News -->
-    <section id="news" class="page-section">
-      <h2>News</h2>
-      <ul class="news-list">
-        <li>
-          <span class="news-date-badge">Aug. 2026</span>
-          I joined UVA Computer Science as a Ph.D. student, advised by Prof. Xi Peng.
-        </li>
-        <li>
-          <span class="news-date-badge">Jun. 2026</span>
-          Our paper <em>Vaxjo 2.0</em> was published in
-          <em>Frontiers in Cellular and Infection Microbiology</em>.
-        </li>
-        <li>
-          <span class="news-date-badge">Dec. 2025</span>
-          Our preprint <em>VaxjoGNN: A Graph Neural Network for Ontology-Grounded Vaccine
-          Adjuvant Recommendation</em> was released on bioRxiv.
-        </li>
-        <li>
-          <span class="news-date-badge">2025</span>
-          Our paper <em>Efficiently Democratizing Medical LLMs for 50 Languages via a
-          Mixture of Language Family Experts</em> was accepted to ICLR 2025.
-        </li>
-      </ul>
-    </section>
-
-    <!-- Publications -->
-    <section id="publications" class="page-section">
-      <h2>Publications</h2>
-
-      <h3 class="year-heading">2026</h3>
-      <article class="publication-card">
-        <div class="paper-visual"><span>Vaxjo 2.0</span></div>
-        <div class="paper-info">
-          <h3>Vaxjo 2.0: An Ontology- and Large Language Model-Powered Knowledge Base of Vaccine Adjuvants and Mechanisms</h3>
-          <p class="authors">
-            Joshua Monickaraj, Hasin Rehana, Ani Bernardi, <strong>Yuping Zheng</strong>,
-            Taiyu Lin, Le Liu, Amogh Madireddi, Leo Yeh, Jie Zheng, Junguk Hur, Yongqun He
-          </p>
-          <p class="venue"><em>Frontiers in Cellular and Infection Microbiology</em>, 2026</p>
-          <p class="paper-links">
-            <a href="https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2026.1763384/full"
-               target="_blank" rel="noopener">Paper</a>
-          </p>
-        </div>
-      </article>
-
-      <h3 class="year-heading">2025</h3>
-      <article class="publication-card">
-        <div class="paper-visual"><span>VaxjoGNN</span></div>
-        <div class="paper-info">
-          <h3>VaxjoGNN: A Graph Neural Network for Ontology-Grounded Vaccine Adjuvant Recommendation</h3>
-          <p class="authors"><strong>Yuping Zheng</strong>, Yongqun He</p>
-          <p class="venue"><em>bioRxiv</em>, 2025</p>
-          <p class="paper-description">
-            An ontology-grounded graph learning framework for vaccine adjuvant recommendation
-            under sparse and heterogeneous biomedical evidence.
-          </p>
-          <p class="paper-links">
-            <a href="https://www.biorxiv.org/content/10.1101/2025.11.27.690985v1"
-               target="_blank" rel="noopener">Paper</a>
-          </p>
-        </div>
-      </article>
-
-      <article class="publication-card">
-        <div class="paper-visual"><span>ICLR 2025</span></div>
-        <div class="paper-info">
-          <h3>Efficiently Democratizing Medical LLMs for 50 Languages via a Mixture of Language Family Experts</h3>
-          <p class="authors">
-            Guorui Zheng, Xidong Wang, Juhao Liang, Nuo Chen, <strong>Yuping Zheng</strong>, Benyou Wang
-          </p>
-          <p class="venue"><em>International Conference on Learning Representations (ICLR)</em>, 2025</p>
-          <p class="paper-description">
-            A multilingual mixture-of-experts framework for scaling medical language models
-            across 50 languages through language-family-based routing.
-          </p>
-          <p class="paper-links">
-            <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/1551c01d7a3d0bf21e2518331e9f7074-Abstract-Conference.html"
-               target="_blank" rel="noopener">Paper</a>
-            <span>·</span>
-            <a href="https://github.com/FreedomIntelligence/ApolloMoE"
-               target="_blank" rel="noopener">Code</a>
-          </p>
-        </div>
-      </article>
-
-      <h3 class="year-heading">2024</h3>
-      <article class="publication-card">
-        <div class="paper-visual"><span>VaxLLM</span></div>
-        <div class="paper-info">
-          <h3>VaxLLM: Leveraging Fine-tuned Large Language Model for Automated Annotation of Brucella Vaccines</h3>
-          <p class="authors">
-            Xingxian Li, <strong>Yuping Zheng</strong>, Joy Hu, Jie Zheng, Zhigang Wang, Yongqun He
-          </p>
-          <p class="venue"><em>bioRxiv</em>, 2024</p>
-          <p class="paper-links">
-            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11623542/"
-               target="_blank" rel="noopener">Paper</a>
-            <span>·</span>
-            <a href="https://github.com/xingxianli/VaxLLM"
-               target="_blank" rel="noopener">Code</a>
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <!-- Research -->
-    <section id="research" class="page-section">
-      <h2>Research</h2>
-
-      <article class="research-card">
-        <div class="research-visual">
-          <span>NFDM</span>
-          <small>replace with project figure</small>
-        </div>
-        <div class="research-info">
-          <h3>Learning Forward Processes for Discrete Flow Matching</h3>
           <p>
-            Can the forward process of a discrete generative model be learned rather than
-            hand-designed? We explore learnable corruption schedules and discrete state
-            representations for flow matching. A learned one-dimensional codebook improves
-            generation, while increasing its dimensionality reveals an unexpected failure mode:
-            the training objective continues to improve even as the learned representation
-            becomes highly anisotropic and generation quality deteriorates.
+            I am a Ph.D. student in Computer Science at the
+            <a href="https://www.virginia.edu/" target="_blank" rel="noopener">University of Virginia</a>,
+            advised by Prof. Xi Peng.
           </p>
-        </div>
-      </article>
 
-      <article class="research-card">
-        <div class="research-visual">
-          <span>VaxjoGNN</span>
-          <small>replace with project figure</small>
-        </div>
-        <div class="research-info">
-          <h3>Ontology-Grounded Learning for Vaccine Adjuvant Recommendation</h3>
           <p>
-            How can structured biomedical knowledge help learning when experimental evidence is
-            sparse and heterogeneous? In VaxjoGNN, we use an ontology-grounded graph
-            representation to integrate vaccine, adjuvant, and biological knowledge for vaccine
-            adjuvant recommendation.
+            My research interests broadly lie in representation learning, generative modeling,
+            and interpretability. Recently, I have been particularly interested in understanding
+            how models learn and organize internal representations, especially in world models
+            and multimodal systems.
           </p>
-          <p class="paper-links">
-            <a href="https://www.biorxiv.org/content/10.1101/2025.11.27.690985v1"
-               target="_blank" rel="noopener">Paper</a>
-          </p>
+
+          <div class="contact-links">
+            <!-- TODO: replace placeholders -->
+            <a href="#" title="Add your email address">Email</a>
+            <span>·</span>
+            <a href="#" title="Add your CV PDF">CV</a>
+            <span>·</span>
+            <a href="#" title="Add your Google Scholar profile">Google Scholar</a>
+            <span>·</span>
+            <a href="https://github.com/yupingzheng00000" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </div>
-      </article>
-    </section>
 
-    <!-- Education -->
-    <section id="education" class="page-section">
-      <h2>Education</h2>
-
-      <div class="education-entry">
-        <div>
-          <h3>University of Virginia</h3>
-          <p><strong>Ph.D. in Computer Science</strong></p>
-          <p>2026–Present · Advisor: Prof. Xi Peng</p>
+        <div class="portrait-wrap">
+          <!-- Replace this file with your portrait later, or change the src. -->
+          <img class="portrait" src="images/template/avatar.svg" alt="Portrait placeholder">
         </div>
-      </div>
+      </section>
 
-      <div class="education-entry">
-        <div>
-          <h3>The Chinese University of Hong Kong, Shenzhen</h3>
-          <p><strong>B.S. in Data Science and Big Data Technology</strong></p>
-          <p>2022–2026</p>
+      <!-- News -->
+      <section id="news" class="page-section">
+        <h2>News</h2>
+        <div class="news-list">
+          <div class="news-item">
+            <span class="news-date">Aug. 2026</span>
+            <span>I joined UVA Computer Science as a Ph.D. student, advised by Prof. Xi Peng.</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">Jun. 2026</span>
+            <span>Our paper <em>Vaxjo 2.0</em> was published in <em>Frontiers in Cellular and Infection Microbiology</em>.</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">Dec. 2025</span>
+            <span>Our preprint <em>VaxjoGNN</em> was released on bioRxiv.</span>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025</span>
+            <span>Our paper <em>Efficiently Democratizing Medical LLMs for 50 Languages via a Mixture of Language Family Experts</em> was accepted to ICLR 2025.</span>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
+      <!-- Publications -->
+      <section id="publications" class="page-section">
+        <h2>Publications</h2>
 
-  <!-- Mountain footer retained from the template -->
+        <h3 class="year">2026</h3>
+        <article class="publication-row">
+          <div class="thumb">
+            <span>Vaxjo 2.0</span>
+          </div>
+          <div class="publication-copy">
+            <h3>Vaxjo 2.0: An Ontology- and Large Language Model-Powered Knowledge Base of Vaccine Adjuvants and Mechanisms</h3>
+            <p class="authors">
+              Joshua Monickaraj, Hasin Rehana, Ani Bernardi, <strong>Yuping Zheng</strong>,
+              Taiyu Lin, Le Liu, Amogh Madireddi, Leo Yeh, Jie Zheng, Junguk Hur, Yongqun He
+            </p>
+            <p class="venue"><em>Frontiers in Cellular and Infection Microbiology</em>, 2026</p>
+            <p class="links">
+              <a href="https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2026.1763384/full"
+                 target="_blank" rel="noopener">Paper</a>
+            </p>
+          </div>
+        </article>
+
+        <h3 class="year">2025</h3>
+        <article class="publication-row">
+          <div class="thumb">
+            <span>VaxjoGNN</span>
+          </div>
+          <div class="publication-copy">
+            <h3>VaxjoGNN: A Graph Neural Network for Ontology-Grounded Vaccine Adjuvant Recommendation</h3>
+            <p class="authors"><strong>Yuping Zheng</strong>, Yongqun He</p>
+            <p class="venue"><em>bioRxiv</em>, 2025</p>
+            <p class="description">
+              An ontology-grounded graph learning framework for vaccine adjuvant recommendation
+              under sparse and heterogeneous biomedical evidence.
+            </p>
+            <p class="links">
+              <a href="https://www.biorxiv.org/content/10.1101/2025.11.27.690985v1"
+                 target="_blank" rel="noopener">Paper</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="publication-row">
+          <div class="thumb">
+            <span>ICLR 2025</span>
+          </div>
+          <div class="publication-copy">
+            <h3>Efficiently Democratizing Medical LLMs for 50 Languages via a Mixture of Language Family Experts</h3>
+            <p class="authors">
+              Guorui Zheng, Xidong Wang, Juhao Liang, Nuo Chen, <strong>Yuping Zheng</strong>, Benyou Wang
+            </p>
+            <p class="venue"><em>International Conference on Learning Representations (ICLR)</em>, 2025</p>
+            <p class="description">
+              A multilingual mixture-of-experts framework for scaling medical language models
+              across 50 languages through language-family-based routing.
+            </p>
+            <p class="links">
+              <a href="https://proceedings.iclr.cc/paper_files/paper/2025/hash/1551c01d7a3d0bf21e2518331e9f7074-Abstract-Conference.html"
+                 target="_blank" rel="noopener">Paper</a>
+              <span>·</span>
+              <a href="https://github.com/FreedomIntelligence/ApolloMoE"
+                 target="_blank" rel="noopener">Code</a>
+            </p>
+          </div>
+        </article>
+
+        <h3 class="year">2024</h3>
+        <article class="publication-row">
+          <div class="thumb">
+            <span>VaxLLM</span>
+          </div>
+          <div class="publication-copy">
+            <h3>VaxLLM: Leveraging Fine-tuned Large Language Model for Automated Annotation of Brucella Vaccines</h3>
+            <p class="authors">
+              Xingxian Li, <strong>Yuping Zheng</strong>, Joy Hu, Jie Zheng, Zhigang Wang, Yongqun He
+            </p>
+            <p class="venue"><em>bioRxiv</em>, 2024</p>
+            <p class="links">
+              <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11623542/"
+                 target="_blank" rel="noopener">Paper</a>
+              <span>·</span>
+              <a href="https://github.com/xingxianli/VaxLLM"
+                 target="_blank" rel="noopener">Code</a>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Research -->
+      <section id="research" class="page-section">
+        <h2>Research</h2>
+
+        <article class="research-row">
+          <div class="thumb research-thumb">
+            <span>NFDM</span>
+            <small>project figure</small>
+          </div>
+          <div>
+            <h3>Learning Forward Processes for Discrete Flow Matching</h3>
+            <p>
+              Can the forward process of a discrete generative model be learned rather than hand-designed?
+              We explore learnable corruption schedules and discrete state representations for flow matching.
+              A learned one-dimensional codebook improves generation, while increasing its dimensionality
+              reveals an unexpected failure mode: the training objective continues to improve even as the
+              learned representation becomes highly anisotropic and generation quality deteriorates.
+            </p>
+          </div>
+        </article>
+
+        <article class="research-row">
+          <div class="thumb research-thumb">
+            <span>VaxjoGNN</span>
+            <small>project figure</small>
+          </div>
+          <div>
+            <h3>Ontology-Grounded Learning for Vaccine Adjuvant Recommendation</h3>
+            <p>
+              How can structured biomedical knowledge help learning when experimental evidence is sparse
+              and heterogeneous? In VaxjoGNN, we use an ontology-grounded graph representation to integrate
+              vaccine, adjuvant, and biological knowledge for vaccine adjuvant recommendation.
+            </p>
+            <p class="links">
+              <a href="https://www.biorxiv.org/content/10.1101/2025.11.27.690985v1"
+                 target="_blank" rel="noopener">Paper</a>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="page-section">
+        <h2>Education</h2>
+
+        <div class="education-row">
+          <div class="education-year">2026–Present</div>
+          <div>
+            <h3>University of Virginia</h3>
+            <p><strong>Ph.D. in Computer Science</strong></p>
+            <p class="muted">Advisor: Prof. Xi Peng</p>
+          </div>
+        </div>
+
+        <div class="education-row">
+          <div class="education-year">2022–2026</div>
+          <div>
+            <h3>The Chinese University of Hong Kong, Shenzhen</h3>
+            <p><strong>B.S. in Data Science and Big Data Technology</strong></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
   <footer class="mountain-footer">
-    <img class="mountain-img" src="images/experience/background.jpeg"
-         alt="Snowy mountain landscape" loading="lazy">
-    <div class="mountain-overlay"></div>
-    <div class="mountain-content">
+    <img src="images/experience/background.jpeg" alt="Snowy mountain landscape">
+    <div class="mountain-shade"></div>
+    <div class="mountain-copy">
       <h2>Keep Exploring</h2>
-      <!-- TODO: replace # with your email -->
-      <a href="#" class="mountain-cta">Get in Touch</a>
+      <a href="#" title="Add your email address">Get in Touch</a>
     </div>
   </footer>
-
 </body>
 </html>
