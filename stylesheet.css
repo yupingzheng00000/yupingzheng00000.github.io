@@ -167,13 +167,12 @@ h3 {
 .publication-row,
 .research-row {
   display: grid;
-  grid-template-columns: 142px minmax(0, 1fr);
-  gap: 20px;
+  grid-template-columns: 165px minmax(0, 1fr);
+  gap: 22px;
   align-items: start;
-  padding: 15px 0;
+  padding: 17px 0;
   border-bottom: 1px solid #f0f0f0;
 }
-
 .publication-row:last-child,
 .research-row:last-child {
   border-bottom: 0;
@@ -311,8 +310,8 @@ h3 {
   text-decoration: none;
 }
 .thumb {
-  width: 142px;
-  height: 94px;
+  width: 165px;
+  height: 110px;
   border: 1px solid #e5ddd1;
   border-radius: 7px;
   background: #fff;
