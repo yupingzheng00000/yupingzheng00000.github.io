@@ -310,6 +310,31 @@ h3 {
   background: rgba(0,0,0,.24);
   text-decoration: none;
 }
+.thumb {
+  width: 142px;
+  height: 94px;
+  border: 1px solid #e5ddd1;
+  border-radius: 7px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  overflow: hidden;
+  color: #80511d;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
 
 /* Mobile */
 @media (max-width: 680px) {
@@ -335,7 +360,7 @@ h3 {
 
   .portrait {
     width: 135px;
-    height: 155px;
+    height: 135px;
   }
 
   .about-copy h1,
@@ -368,15 +393,5 @@ h3 {
 
   .mountain-footer {
     height: 225px;
-  }
-  .thumb {
-  overflow: hidden;
-  background: #fff;
-  }
-  .thumb img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
   }
 }
