@@ -8,7 +8,7 @@
   <title>Yuping Zheng | Academic Homepage</title>
 
   <!-- Version query forces browsers/GitHub Pages to fetch the new CSS. -->
-  <link rel="stylesheet" href="stylesheet.css?v=20260902-1">
+  <link rel="stylesheet" href="stylesheet.css?v=20261108-1">
   <link rel="icon" type="image/svg+xml" href="images/template/avatar.svg">
 </head>
 
@@ -39,6 +39,16 @@
 
           <p>
             I am interested in how AI systems learn, represent information, and reason. I aim to develop and test falsifiable hypotheses about these processes, drawing on ideas from cognitive science, neuroscience, mathematics, and related fields.
+          </p>
+
+          <p>
+            Before joining UVA, I worked at CUHK-Shenzhen with
+            <a href="https://itszhen.com/" target="_blank" rel="noopener">Prof. Zhen Liu</a>
+            on discrete generative models and with
+            <a href="https://wabyking.github.io/" target="_blank" rel="noopener">Prof. Benyou Wang</a>
+            on multilingual medical language models. I also worked with
+            <a href="https://medschool.umich.edu/profile/4900/yongqun-oliver-he" target="_blank" rel="noopener">Prof. Yongqun He</a>
+            at the University of Michigan Medical School on machine learning for vaccine research.
           </p>
 
           <div class="contact-links">
@@ -111,7 +121,7 @@
         </article>
 
         <h3 class="year">2025</h3>
-        <article class="publication-row">
+        <article id="vaxjognn-publication" class="publication-row">
           <div class="thumb" style="width:165px; height:110px; overflow:hidden;">
             <img
               src="images/paper/vaxjognn.png"
@@ -192,55 +202,61 @@
         <h2>Research</h2>
 
         <article class="research-row">
-          <div class="thumb research-thumb">
-            <span>HCC</span>
-            <small>project figure</small>
-          </div>
-          <div>
-            <h3>World Models for Longitudinal Medical Data</h3>
-            <em>Graduate Research Rotation · University of Virginia · Fall 2026</em>
-            <p>
-              <strong>Can forecasting future disease states improve survival prediction?</strong> I am exploring a framework that jointly forecasts tumor and 
-              liver-function changes from longitudinal imaging and multimodal clinical data, 
-              with a focus on hepatocellular carcinoma (HCC).
-            </p>
-          </div>
+          <h3>World Models for Longitudinal Medical Data</h3>
+          <p class="research-context">Graduate Research Rotation · University of Virginia · Fall 2026</p>
+          <p>
+            <strong>Can forecasting future disease states improve survival prediction?</strong>
+            I am exploring a framework that jointly forecasts tumor and liver-function changes from
+            longitudinal imaging and multimodal clinical data, with a focus on hepatocellular carcinoma (HCC).
+          </p>
+          <figure class="research-figure">
+            <a href="images/hcc-world-model.png" target="_blank" rel="noopener"
+               aria-label="Open the full-size proposed tumor–liver world model diagram">
+              <img src="images/hcc-world-model.png" width="1732" height="388" loading="lazy"
+                   alt="Patient history and treatment feed a model that forecasts tumor state and liver function. Both forecasts and the original inputs feed an overall survival risk estimate.">
+            </a>
+            <figcaption>Proposed framework for treatment-conditioned forecasting and survival risk prediction.</figcaption>
+          </figure>
         </article>
 
         <article class="research-row">
-          <div class="thumb research-thumb">
-            <span>NFDM</span>
-            <small>project figure</small>
-          </div>
-          <div>
-            <h3>Learning Forward Processes for Discrete Flow Matching</h3>
-            <p>
-              <strong>Can the forward process of a discrete generative model be learned rather than hand-designed?</strong>
-              We explore learnable corruption schedules and discrete state representations for flow matching.
-              A learned one-dimensional codebook improves generation, while increasing its dimensionality
-              reveals an unexpected failure mode: the training objective continues to improve even as the
-              learned representation becomes highly anisotropic and generation quality deteriorates.
-            </p>
-          </div>
+          <h3>Representation Collapse in Discrete Flow Matching</h3>
+          <p class="research-context">GenLab · CUHK-Shenzhen</p>
+          <p>
+            <strong>What happens to the learned embeddings when we train a discrete flow model?</strong>
+            In our experiments, 16-dimensional embeddings became nearly one-dimensional even as the training
+            loss decreased. An embedding reconstruction penalty partially mitigated this collapse.
+          </p>
+          <figure class="research-figure">
+            <a href="images/flow-similarity.png" target="_blank" rel="noopener"
+               aria-label="Open the full-size cosine similarity heatmaps">
+              <img src="images/flow-similarity.png" width="1998" height="829" loading="lazy"
+                   alt="Pairwise cosine similarity is often close to minus one or plus one without reconstruction. With reconstruction, the similarities are more varied.">
+            </a>
+            <figcaption>Pairwise cosine similarity of learned embeddings without (left) and with (right) a reconstruction penalty.</figcaption>
+          </figure>
+          <details class="research-details">
+            <summary>View t-SNE projection</summary>
+            <figure class="research-figure research-figure-compact">
+              <a href="images/flow-tsne.png" target="_blank" rel="noopener"
+                 aria-label="Open the full-size t-SNE projection">
+                <img src="images/flow-tsne.png" width="997" height="828" loading="lazy"
+                     alt="Two-dimensional t-SNE projection of embeddings trained without reconstruction (blue) and with reconstruction (orange).">
+              </a>
+              <figcaption>Qualitative comparison of the learned embeddings in a two-dimensional t-SNE projection.</figcaption>
+            </figure>
+          </details>
         </article>
 
         <article class="research-row">
-          <div class="thumb research-thumb">
-            <span>VaxjoGNN</span>
-            <small>project figure</small>
-          </div>
-          <div>
-            <h3>Ontology-Grounded Learning for Vaccine Adjuvant Recommendation</h3>
-            <p>
-              <strong>How can structured biomedical knowledge help learning when experimental evidence is sparse
-              and heterogeneous?</strong> In VaxjoGNN, we use an ontology-grounded graph representation to integrate
-              vaccine, adjuvant, and biological knowledge for vaccine adjuvant recommendation.
-            </p>
-            <p class="links">
-              <a href="https://www.biorxiv.org/content/10.1101/2025.11.27.690985v1"
-                 target="_blank" rel="noopener">Paper</a>
-            </p>
-          </div>
+          <h3>Ontology-Grounded Learning for Vaccine Adjuvant Recommendation</h3>
+          <p class="research-context">He Group · University of Michigan Medical School</p>
+          <p>
+            <strong>How can structured biomedical knowledge help when experimental evidence is sparse?</strong>
+            I led the development of VaxjoGNN, an ontology-grounded graph model for vaccine adjuvant recommendation,
+            and evaluated how well it ranked adjuvants for held-out diseases.
+          </p>
+          <p class="links"><a href="#vaxjognn-publication">Preprint and figure</a></p>
         </article>
       </section>
 
