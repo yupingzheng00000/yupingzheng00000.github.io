@@ -170,7 +170,8 @@ h3 {
   border-bottom: 1px solid #f0f0f0;
 }
 
-.publication-row {
+.publication-row,
+.research-row {
   display: grid;
   grid-template-columns: 165px minmax(0, 1fr);
   gap: 22px;
@@ -201,41 +202,35 @@ h3 {
   font-size: 12.8px;
 }
 
-.research-figure {
-  max-width: 760px;
-  margin: 12px 0 4px;
-}
-
-.research-figure-compact {
-  max-width: 520px;
-}
-
-.research-figure a,
-.research-figure img {
+.research-preview {
+  position: relative;
   display: block;
+  aspect-ratio: 3 / 2;
 }
 
-.research-figure img {
+.research-preview img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  padding: 5px;
   border: 1px solid var(--line);
   border-radius: 7px;
+  background: #fff;
+  object-fit: contain;
+  pointer-events: none;
 }
 
-.research-figure figcaption {
-  margin-top: 5px;
-  color: var(--muted);
-  font-size: 12.5px;
-}
-
-.research-details {
-  margin-top: 8px;
-}
-
-.research-details summary {
-  color: var(--accent);
-  cursor: pointer;
-  font-size: 12.8px;
+@media (hover: hover) and (pointer: fine) {
+  .research-preview:is(:hover, :focus-visible) img {
+    z-index: 2;
+    width: min(620px, calc(100vw - 36px));
+    height: auto;
+    max-height: 65vh;
+    box-shadow: 0 6px 24px rgb(0 0 0 / 15%);
+  }
 }
 
 .authors,
@@ -411,6 +406,11 @@ h3 {
 
   .publication-row {
     grid-template-columns: 1fr;
+  }
+
+  .research-row {
+    grid-template-columns: clamp(86px, 24vw, 120px) minmax(0, 1fr);
+    gap: 12px;
   }
 
   .thumb {

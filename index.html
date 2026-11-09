@@ -8,7 +8,7 @@
   <title>Yuping Zheng | Academic Homepage</title>
 
   <!-- Version query forces browsers/GitHub Pages to fetch the new CSS. -->
-  <link rel="stylesheet" href="stylesheet.css?v=20261108-1">
+  <link rel="stylesheet" href="stylesheet.css?v=20261108-2">
   <link rel="icon" type="image/svg+xml" href="images/template/avatar.svg">
 </head>
 
@@ -202,61 +202,56 @@
         <h2>Research</h2>
 
         <article class="research-row">
-          <h3>World Models for Longitudinal Medical Data</h3>
-          <p class="research-context">Graduate Research Rotation · University of Virginia · Fall 2026</p>
-          <p>
-            <strong>Can forecasting future disease states improve survival prediction?</strong>
-            I am exploring a framework that jointly forecasts tumor and liver-function changes from
-            longitudinal imaging and multimodal clinical data, with a focus on hepatocellular carcinoma (HCC).
-          </p>
-          <figure class="research-figure">
-            <a href="images/hcc-world-model.png" target="_blank" rel="noopener"
-               aria-label="Open the full-size proposed tumor–liver world model diagram">
-              <img src="images/hcc-world-model.png" width="1732" height="388" loading="lazy"
-                   alt="Patient history and treatment feed a model that forecasts tumor state and liver function. Both forecasts and the original inputs feed an overall survival risk estimate.">
-            </a>
-            <figcaption>Proposed framework for treatment-conditioned forecasting and survival risk prediction.</figcaption>
-          </figure>
+          <a class="research-preview" href="images/hcc-world-model.png" target="_blank" rel="noopener"
+             aria-label="Open the full-size proposed tumor–liver world model diagram">
+            <img src="images/hcc-world-model.png" width="1732" height="388" loading="lazy"
+                 alt="Proposed framework for treatment-conditioned forecasting and survival risk prediction.">
+          </a>
+          <div>
+            <h3>World Models for Longitudinal Medical Data</h3>
+            <p class="research-context">Graduate Research Rotation · University of Virginia · Fall 2026</p>
+            <p>
+              <strong>Can forecasting future disease states improve survival prediction?</strong>
+              I am exploring a framework that jointly forecasts tumor and liver-function changes from
+              longitudinal imaging and multimodal clinical data, with a focus on hepatocellular carcinoma (HCC).
+            </p>
+          </div>
         </article>
 
         <article class="research-row">
-          <h3>Representation Collapse in Discrete Flow Matching</h3>
-          <p class="research-context">GenLab · CUHK-Shenzhen</p>
-          <p>
-            <strong>What happens to the learned embeddings when we train a discrete flow model?</strong>
-            In our experiments, 16-dimensional embeddings became nearly one-dimensional even as the training
-            loss decreased. An embedding reconstruction penalty partially mitigated this collapse.
-          </p>
-          <figure class="research-figure">
-            <a href="images/flow-similarity.png" target="_blank" rel="noopener"
-               aria-label="Open the full-size cosine similarity heatmaps">
-              <img src="images/flow-similarity.png" width="1998" height="829" loading="lazy"
-                   alt="Pairwise cosine similarity is often close to minus one or plus one without reconstruction. With reconstruction, the similarities are more varied.">
-            </a>
-            <figcaption>Pairwise cosine similarity of learned embeddings without (left) and with (right) a reconstruction penalty.</figcaption>
-          </figure>
-          <details class="research-details">
-            <summary>View t-SNE projection</summary>
-            <figure class="research-figure research-figure-compact">
-              <a href="images/flow-tsne.png" target="_blank" rel="noopener"
-                 aria-label="Open the full-size t-SNE projection">
-                <img src="images/flow-tsne.png" width="997" height="828" loading="lazy"
-                     alt="Two-dimensional t-SNE projection of embeddings trained without reconstruction (blue) and with reconstruction (orange).">
-              </a>
-              <figcaption>Qualitative comparison of the learned embeddings in a two-dimensional t-SNE projection.</figcaption>
-            </figure>
-          </details>
+          <a class="research-preview" href="images/flow-similarity.png" target="_blank" rel="noopener"
+             aria-label="Open the full-size cosine similarity heatmaps">
+            <img src="images/flow-similarity.png" width="1998" height="829" loading="lazy"
+                 alt="Pairwise cosine similarity of learned embeddings without (left) and with (right) a reconstruction penalty.">
+          </a>
+          <div>
+            <h3>Representation Collapse in Discrete Flow Matching</h3>
+            <p class="research-context">GenLab · CUHK-Shenzhen</p>
+            <p>
+              <strong>What happens to the learned embeddings when we train a discrete flow model?</strong>
+              In our experiments, 16-dimensional embeddings became nearly one-dimensional even as the training
+              loss decreased. An embedding reconstruction penalty partially mitigated this collapse.
+            </p>
+            <p class="links"><a href="images/flow-tsne.png" target="_blank" rel="noopener">t-SNE projection</a></p>
+          </div>
         </article>
 
         <article class="research-row">
-          <h3>Ontology-Grounded Learning for Vaccine Adjuvant Recommendation</h3>
-          <p class="research-context">He Group · University of Michigan Medical School</p>
-          <p>
-            <strong>How can structured biomedical knowledge help when experimental evidence is sparse?</strong>
-            I led the development of VaxjoGNN, an ontology-grounded graph model for vaccine adjuvant recommendation,
-            and evaluated how well it ranked adjuvants for held-out diseases.
-          </p>
-          <p class="links"><a href="#vaxjognn-publication">Preprint and figure</a></p>
+          <a class="research-preview" href="images/paper/vaxjognn.png" target="_blank" rel="noopener"
+             aria-label="Open the full-size VaxjoGNN workflow diagram">
+            <img src="images/paper/vaxjognn.png" loading="lazy"
+                 alt="Overview of the VaxjoGNN disease-adjuvant ranking pipeline.">
+          </a>
+          <div>
+            <h3>Ontology-Grounded Learning for Vaccine Adjuvant Recommendation</h3>
+            <p class="research-context">He Group · University of Michigan Medical School</p>
+            <p>
+              <strong>How can structured biomedical knowledge help when experimental evidence is sparse?</strong>
+              I led the development of VaxjoGNN, an ontology-grounded graph model for vaccine adjuvant recommendation,
+              and evaluated how well it ranked adjuvants for held-out diseases.
+            </p>
+            <p class="links"><a href="#vaxjognn-publication">Preprint and figure</a></p>
+          </div>
         </article>
       </section>
 
